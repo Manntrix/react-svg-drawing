@@ -1,5 +1,7 @@
 # React SVG Drawing
 
+![React SVG Drawing](https://i.imgur.com/GjX4VsT.gif)
+
 React SVG Drawing helps you to easily create a SVG drawing animation in your ReactJS app. All you need to do is put your svg inside DrawSVG tag.
 
 First Step:
@@ -14,7 +16,17 @@ import DrawSVG from 'react-svg-drawing'
 
 Third Step:
 ```bash
- <DrawSVG strokeWidth="0.5" loop={true}>
+ <DrawSVG>
+  Your SVG code here
+</DrawSVG>
+```
+
+
+##Example
+```bash
+  import DrawSVG from 'react-svg-drawing';
+
+  <DrawSVG strokeWidth="0.5" loop={true}>
    <svg viewBox="0 0 60 60">
    <path d="M22.404,21.173c2.126,0,3.895-1.724,3.895-3.85V3.849C26.299,1.724,24.53,0,22.404,0c-2.126,0-3.895,1.724-3.895,3.849
 			v13.475C18.51,19.449,20.278,21.173,22.404,21.173z"/>
@@ -40,5 +52,6 @@ Third Step:
 | fill | string | 'none' | Set the color of your SVG. Note: Setting this will stop your animation to work.
 | stroke | string | '#000' | Set the stroke color of your svg.
 | strokeWidth | string, number | 1 | Set the stroke width of your svg.
+| SVGClass | string | 'react-svg-drawing' | Set the class for the SVG
 
 
